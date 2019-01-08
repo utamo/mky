@@ -128,9 +128,6 @@ clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     display: inline-block;
     transition: all .2s;   
     position: relative;
-    animation-name: moveinBottom;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; 
     
     
 }
@@ -162,4 +159,9 @@ clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
  .btn:hover::after {
      transform: scaleX(1.4) scaleY(1.6);
      opacity: 0;
+ }
+
+ .btn-animated {
+    animation: moveinBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
  }
